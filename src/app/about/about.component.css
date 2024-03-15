@@ -1,0 +1,72 @@
+.profile
+{
+    width: 80%;
+    height: 40vh;
+   
+}
+
+#hr
+{
+    width: 2px;
+    height: 100%;
+    background-color: red;
+    border-radius: 10px;
+}
+.content{
+    width: 100%;
+    padding-left: 2em;
+}
+
+.head{
+    width: 8vw;
+    margin-right: 2em;
+}
+
+.head1
+{
+    margin-right: 2em;
+    font-size: 20px;
+    margin-bottom: 0.4em;
+    width: 8vw;
+    position: relative;
+}
+
+.head1::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.image img{
+    width: 13.2em;
+}
+
+.image
+{
+    width: 22em;
+}
+
+.hr
+{
+    width: 2px;
+    height: 100%;
+    background-color: red;
+}
+
+.about
+{
+    width: 80%;
+    height: 40vh;
+    overflow: auto;
+}
+
+.education{
+    width: 80%;
+    height: 40vh;
+}
