@@ -11,6 +11,9 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { TextDirective } from './text.directive';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { NotfoundComponent } from './notfound/notfound.component';
     NavComponent,
     FooterComponent,
     AboutComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    TextDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxTypedJsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

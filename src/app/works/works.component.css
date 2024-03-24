@@ -1,0 +1,104 @@
+.main
+{
+    width: 100%;
+   min-height: 100vh;
+   
+}
+.body
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12vw;
+    width: 90%;
+    min-height: 80vh;
+    
+    padding: 1em 2em;
+}
+
+.card
+{
+    width: 18em;
+    height: 26em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    
+}
+
+
+
+.image
+{
+  width: 100%;
+  height: 80%;
+  background-color: aquamarine;
+  position: relative;
+}
+
+#flipkart::after,#zomato::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:0 ;
+    height: 0;
+    background-color: black;
+    color: rgb(243, 0, 0);
+    font-size: 1.5em;
+    font-weight: 500;
+   text-align: center;
+   opacity: 0.3;
+   z-index: 1;
+   transition: transform 1s ease;
+  
+}
+
+
+
+#flipkart:hover::after
+{
+    content: "Its A flipkart Clone Project ,that is created using Html,Css and JavaScript";
+    width: 100%;
+    height: 80%;
+    bottom: -80%;
+    
+    transform: translateY(-100%);
+}
+
+#zomato:hover::after
+{
+    content: "Its A Zomato Clone Project ,that is created using Html,Css and JavaScript";
+    width: 100%;
+    height: 80%;
+    bottom: -80%;
+    
+    transform: translateY(-100%);
+}
+
+
+
+
+
+.card h3{
+    align-items: center;
+   
+}
+
+.card h3 a{
+    text-decoration: none;
+    color: red;
+    border: 2px solid;
+    padding: 0.1em 0.7em;
+    border-radius: 30px;
+    position: relative;
+}
+.title
+{
+    font-size: 2.5em;
+    font-weight: 900;
+}
+

@@ -8,12 +8,12 @@ import { ContacComponent } from './contac/contac.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
-  { path:'home', component:HomeComponent},
+  { path:'', component:HomeComponent},
   {path:'skills', component:SkillsComponent},
   {path:'about', component:AboutComponent},
   {path:'work', component:WorksComponent},
-  {path:'contact', component:ContacComponent},
-  {path:'**', component:NotfoundComponent}
+  {path:'contact', component:ContacComponent}
+  
 ];
 
 @NgModule({

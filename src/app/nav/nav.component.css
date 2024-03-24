@@ -1,18 +1,52 @@
-.navbar
+.navbar1
 {
    
-    width: 100vw;
-   padding: 1vw 3vw;
+    width: 98.5vw;
+   margin: 0;
+   margin-bottom: 3vw;
+   
 }
 
 nav 
 {
+    position: absolute;
+    top: -5px;
+    left: 0;
    width: 100%;
-    height: 5vh;
+    height: 4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border: none;
+    background-color: white;
+    
+   
+   
+}
+
+.container1
+{
+      height: 3vw;
+     background-color: white;
+     border: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.nav1
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav1 ul{
+   
+    width: 100%;
 }
 
 nav ul {
@@ -64,4 +98,45 @@ nav ul li a:hover::after
 
 .logo h3{
     font-size: 20px;
+}
+
+.navbar2
+{
+    display: none;
+    
+}
+
+.download
+{
+    border: 2px solid ;
+    padding:0.5vw 1vw;
+    border-radius: 4px;
+    background-color: aqua;
+    color: white;
+}
+
+.download a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:1000px) {
+
+
+    .navbar1
+    {
+        display: none;
+    }
+    .navbar2
+    {
+        display: flex;
+        
+        width: 98.5vw;
+        margin: 0;
+       margin-bottom: 3vw;
+       
+    }
+    
+
+   
 }

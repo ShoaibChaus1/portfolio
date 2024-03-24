@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ImagesService } from './images.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +9,8 @@ import { ImagesService } from './images.service';
 })
 export class AppComponent {
   title = 'Portfolio';
+
+  
 
   images:any=[
     {
