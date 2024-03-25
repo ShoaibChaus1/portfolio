@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 export class ImagesService {
 
   images:any=[]
+
+  icons:any=[]
   constructor() { }
 
   setImages(img:any)
@@ -17,5 +19,15 @@ export class ImagesService {
     getImages()
     {
       return this.images;
+    }
+
+    setIcons(icon:any)
+    {
+     this.icons.push(icon)
+    }
+
+    getIcon()
+    {
+      return this.icons
     }
 }

@@ -26,9 +26,52 @@ export class AppComponent {
       path:'../assets/images/profile.jpeg'
     }
   ]
+
+  icons:any=[
+   
+    {
+      name:'Angular',
+      path:'../assets/LanIcons/icons8-angular.svg'
+    },
+    {
+      name:'Bootstrap',
+      path:'../assets/LanIcons/icons8-bootstrap.svg'
+    },
+    {
+      name:'css',
+      path:'../assets/LanIcons/icons8-css.svg'
+    },
+    {
+      name:'html',
+      path:'../assets/LanIcons/icons8-html.svg'
+    },
+    {
+      name:'java',
+      path:'../assets/LanIcons/icons8-java (1).svg'
+    },
+    {
+      name:'js',
+      path:'../assets/LanIcons/icons8-js.svg'
+    },
+    {
+      name:'oracle',
+      path:'../assets/LanIcons/icons8-oracle.svg'
+    }
+    ,
+    {
+      name:'selenium',
+      path:'../assets/LanIcons/icons8-selenium.svg'
+    },
+    {
+      name:'springBoot1',
+      path:'../assets/LanIcons/icons8-spring-boot (1).svg'
+    }
+    
+  ]
   constructor(private service:ImagesService)
   {
       this.service.setImages(this.images)
+      this.service.setIcons(this.icons)
 
   }
 
