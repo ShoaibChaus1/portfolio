@@ -2,6 +2,7 @@
 {
     width: 100%;
    min-height: 100vh;
+   border: 2px solid red;
    
 }
 .body
@@ -15,6 +16,7 @@
     min-height: 80vh;
     
     padding: 1em 2em;
+    border: 2px solid;
 }
 
 .card
@@ -25,6 +27,8 @@
     justify-content: center;
     align-items: center;
     gap: 1vw;
+
+    border: 2px solid;
     
 }
 
@@ -100,5 +104,6 @@
 {
     font-size: 2.5em;
     font-weight: 900;
+    border: 2px solid;
 }
 
