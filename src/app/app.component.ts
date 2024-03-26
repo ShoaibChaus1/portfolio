@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ImagesService } from './images.service';
+import { ElementRef } from '@angular/core';
 
 
 @Component({
@@ -7,7 +8,7 @@ import { ImagesService } from './images.service';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'Portfolio';
 
   
@@ -68,13 +69,19 @@ export class AppComponent {
     }
     
   ]
-  constructor(private service:ImagesService)
+  constructor(private service:ImagesService,private elementRef:ElementRef)
   {
       this.service.setImages(this.images)
       this.service.setIcons(this.icons)
 
   }
 
-  
+  scrollTo(section: string): void {
+    const element = this.elementRef.nativeElement.querySelector('#' + section);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+  }
+
+  
+
 
