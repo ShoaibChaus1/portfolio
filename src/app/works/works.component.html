@@ -2,27 +2,27 @@
     <div class="title">Projects</div>
     <div class="body">
         
-        <div (mouseenter)="title1=true" (mouseleave)="title1=false" id="card" class="card" >
+        <div appScrollTrigger (mouseenter)="title1=true" (mouseleave)="title1=false" id="card" class="card" >
             <div id="flipkart" class="image">
                 <img src="" alt="">
             </div>
             <h3 *ngIf="!title1">Flipkart</h3>
             <h3 *ngIf="title1"><a href="https://google.com">Visit Site</a></h3>
         </div>
-        <div (mouseenter)="title2=true" (mouseleave)="title2=false"   class="card">
+        <div appScrollRight (mouseenter)="title2=true" (mouseleave)="title2=false"   class="card">
             <div id="zomato" class="image">
                 <img src="" alt="">
             </div>
             <h3 *ngIf="!title2">Zomato</h3>
             <h3 *ngIf="title2"><a href="https://zomato.com" target="_blank">Visit Site</a></h3>
         </div>
-        <div class="card">
+        <div appScrollTrigger class="card">
             <div id="coming1" class="image">
                 <img src="" alt="">
             </div>
             <h3>Title</h3>
         </div>
-        <div class="card">
+        <div appScrollRight class="card">
             <div id="coming2" class="image">
                 <img src="" alt="">
             </div>

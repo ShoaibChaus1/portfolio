@@ -13,6 +13,11 @@ import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { TextDirective } from './text.directive';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { ScrollTriggerDirective } from './scroll-trigger.directive';
+import { ScrollRightDirective } from './scroll-right.directive';
+import { AppearTopDirective } from './appear-top.directive';
+import { AppeardownDirective } from './appeardown.directive';
+import { Appeardown1Directive } from './appeardown1.directive';
 
 
 @NgModule({
@@ -26,7 +31,12 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     FooterComponent,
     AboutComponent,
     NotfoundComponent,
-    TextDirective
+    TextDirective,
+    ScrollTriggerDirective,
+    ScrollRightDirective,
+    AppearTopDirective,
+    AppeardownDirective,
+    Appeardown1Directive
   ],
   imports: [
     BrowserModule,

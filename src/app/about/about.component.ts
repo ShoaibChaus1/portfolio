@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ImagesService } from '../images.service';
-import aos from 'aos';
+import ScrollTrigger from 'gsap-trial/ScrollTrigger';
+
 
 @Component({
   selector: 'app-about',
@@ -17,7 +18,7 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      aos.init()
+    
   }
 
 }
